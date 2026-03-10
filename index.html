@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Favicon (optional) -->
-  <!--
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="keywords" content="Gideon Sife, Software Engineer, Web Developer, React Developer Portfolio, UI Designer">
+  <meta
+    name="keywords"
+    content="Gideon Sife, Software Engineer, Web Developer, Portfolio, Computer Science Student"
+  />
+  <meta
+    name="description"
+    content="Portfolio website of Gideon Sife, a Towson University Computer Science student focused on software development, cloud technologies, and system design."
+  />
 
-  <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous"
+  />
 
   <link rel="stylesheet" href="style.css" />
-  <title>Gideon Sife</title>
+  <title>Gideon Sife | Portfolio</title>
 </head>
 
 <body>
-  <div class="grid-2">
-    <!-- LEFT COLUMN -->
-    <div class="section-1">
-      <!-- Optional logo -->
-      <!-- <img src="img/logo.png" width="110" height="73" alt="Logo" /> -->
+  <main class="layout">
+    <aside class="profile-panel card">
+      <div class="profile-image-wrap">
+        <img
+          src="profile.jpg"
+          alt="Portrait of Gideon Sife"
+          class="profile-image"
+        />
+      </div>
 
-      <h2>Gideon Sife</h2>
-      <p>Towson University • Computer Science</p>
-
-      <!-- Social links (keep only what you want) -->
-      <!-- Replace # with your actual links if you want them shown -->
-      <a href="https://www.instagram.com/g.sife1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/gideon-sife-11477b259" 
-        aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin"></i></a>
-
-      <!-- GitHub (from your past info: gsife12) -->
-      <a href="https://github.com/gsife12" aria-label="GitHub"><i class="fab fa-github"></i></a>
-
-      <!-- Email (from your past info) -->
-      <a href="mailto:gsife2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="section-2">
-      <h2>About</h2>
-      <p>
-        Junior Computer Science student at Towson University.
-        I’m aspiring to become a Full-stack Devolper, and I enjoy building websites, and mobile App.
+      <p class="eyebrow">Computer Science Student</p>
+      <h1>Gideon A. Sife</h1>
+      <p class="subtitle">Towson University</p>
+      <p class="summary-line">
+        Building technology that solves real-world problems.
       </p>
 
-      <h2>Certifications</h2>
-      <ul class="book">
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>Google AI Essentials</li>
-        <li>Google Prompting Essentials</li>
-      </ul>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/g.sife1" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gideon-sife-11477b259"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gsife12" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:gsife2@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
 
-      <h2>Projects</h2>
-      <ul class="phone">
-        <li>
-          <u><a href="#" target="_blank" rel="noopener">SquadLinx</a></u>
-          (Full-stack sports platform expected by Dec 2026)
-        </li>
-      </ul>
+      <a class="resume-button" href="Gideon_Sife_Resume.pdf" target="_blank" rel="noopener">
+        View Resume
+      </a>
+    </aside>
 
-      <h2>Info</h2>
-      <ul class="paper">
-        <!-- Put your resume PDF in a /files folder and link it here -->
-        <li><u><a href="Gideon_Sife_Resume.pdf" target="_blank" rel="noopener">Resume</a></u></li>
-      </ul>
+    <section class="content">
+      <section class="hero card">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Future software engineer focused on impactful systems and scalable ideas.</h2>
+        <p>
+          Originally from Ethiopia and now based in the United States, I bring
+          resilience, curiosity, and a growth mindset to every project I build.
+        </p>
+      </section>
 
-      <h2>Interests</h2>
-      <p>
-      • Building software that solves real-world problems<br>
-      • Web and mobile application development<br>
-      • Entrepreneurship and startup ideas<br>
-      • Soccer and community engagement<br>
-      </p>
-    </div>
-  </div>
+      <section class="card about-card">
+        <h2>About</h2>
+        <p>
+        I am a Computer Science student at Towson University with a strong interest in building technology that solves real-world problems. Originally from Ethiopia, I moved to the United States in 2016 in pursuit of better educational and career opportunities. Adjusting to a new environment strengthened my resilience, determination, and commitment to personal growth, shaping my goal of building a meaningful career in information technology.
+        </p>
+        <p>
+          My interest in computing comes from a deep curiosity about how software systems work and how technology can improve everyday life. Through my studies, I have gained experience with programming languages and technologies including Java, C++, Python, HTML, CSS, JavaScript, and SQL. I also have experience writing Shell and Bash scripts for automation and working with development tools and databases. In addition to my academic work, I am currently working toward CompTIA certifications to expand my knowledge of IT infrastructure, networking, and system administration.
+        </p>
+        <p>
+          I aspire to build a career in the technology industry where I can develop applications and systems that positively impact users and communities. I am particularly interested in software development, cloud technologies, and system design, with the long-term goal of becoming a skilled software engineer or solutions architect. I believe persistence, continuous learning, and curiosity are essential for success in technology, and I am committed to continuously improving my skills while contributing innovative ideas to the IT field.
+        </p>
+      </section>
+
+      <section class="info-grid">
+        <article class="card">
+          <h2>Certifications</h2>
+          <p class="detail-text">
+            • AWS Certified Cloud Practitioner<br />
+            • Google AI Essentials<br />
+            • Google Prompting Essentials
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Projects</h2>
+          <p class="detail-text">
+            • <a href="#" target="_blank" rel="noopener">SquadLinx</a>: Full-stack
+            sports platform expected by December 2026.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Interests</h2>
+          <p class="detail-text">
+            • Building software that solves real-world problems<br />
+            • Web and mobile application development<br />
+            • Entrepreneurship and startup ideas<br />
+            • Soccer and community engagement
+          </p>
+        </article>
+      </section>
+    </section>
+  </main>
 </body>
 </html>
