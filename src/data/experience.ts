@@ -15,6 +15,18 @@ export const experience: RoleExperience[] = [
     ],
   },
   {
+    id: 'towson-ots',
+    title: 'Front Desk Associate',
+    company: 'Towson University — Office of Technology Services',
+    location: 'Towson, MD',
+    startDate: 'Aug 2026',
+    endDate: 'Present',
+    bullets: [
+      'Serve as the first point of contact for students and staff seeking technology assistance at the OTS help desk.',
+      'Assist with equipment loans, account issues, and general technology inquiries in a fast-paced campus environment.',
+    ],
+  },
+  {
     id: 'outlier',
     title: 'AI Trainer',
     company: 'Outlier AI',
