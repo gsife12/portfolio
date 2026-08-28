@@ -1,6 +1,7 @@
 import { Button } from '../../ui/Button'
 import { PipelineGraphic } from '../../graphics/PipelineGraphic'
 import { LINKS, RESUME_PATH } from '../../../constants'
+import { asset } from '../../../utils/asset'
 
 function GitHubIcon() {
   return (
@@ -107,7 +108,7 @@ export function Hero() {
             <div className="relative">
               {/* Profile photo — modest size */}
               <img
-                src="/profile.jpg"
+                src={asset('profile.jpg')}
                 alt="Gideon Sife"
                 width={240}
                 height={240}

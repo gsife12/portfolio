@@ -3,6 +3,7 @@ import { Tag } from '../../ui/Tag'
 import { Button } from '../../ui/Button'
 import { useInView } from '../../../hooks/useInView'
 import { projects } from '../../../data/projects'
+import { asset } from '../../../utils/asset'
 
 const jobTracker = projects.find((p) => p.slug === 'job-tracker')!
 
@@ -63,7 +64,7 @@ export function FeaturedProject() {
           <div className="mt-8 overflow-hidden rounded-xl border border-gs-border/50 bg-gs-bg">
             {jobTracker.caseStudy.screenshots[0] ? (
               <img
-                src={jobTracker.caseStudy.screenshots[0]}
+                src={asset(jobTracker.caseStudy.screenshots[0])}
                 alt="Job Tracker application screenshot"
                 className="w-full object-cover"
                 loading="lazy"

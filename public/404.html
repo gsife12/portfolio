@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      // GitHub Pages SPA redirect — sends all 404s back to index.html
+      // with the path encoded in the query string.
+      var path = window.location.pathname.replace('/portfolio', '') || '/'
+      window.location.replace(
+        window.location.origin + '/portfolio/?p=' + encodeURIComponent(path)
+      )
+    </script>
+  </head>
+</html>

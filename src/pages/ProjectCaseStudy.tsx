@@ -3,6 +3,7 @@ import { useSEO } from '../seo'
 import { getProjectBySlug } from '../data/projects'
 import { Tag } from '../components/ui/Tag'
 import { NotFound } from './NotFound'
+import { asset } from '../utils/asset'
 import type { Project } from '../types'
 
 // ── Inner component rendered only when project is known ───────────────────────
@@ -91,7 +92,7 @@ function CaseStudyContent({ project }: { project: Project }) {
             {cs.screenshots.map((src, i) => (
               <figure key={i} className="overflow-hidden rounded-xl border border-gs-border">
                 <img
-                  src={src}
+                  src={asset(src)}
                   alt={`${project.title} screenshot ${i + 1}`}
                   className="w-full object-cover"
                   loading="lazy"

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Badge } from '../../ui/Badge'
 import { Tag } from '../../ui/Tag'
 import { useInView } from '../../../hooks/useInView'
+import { asset } from '../../../utils/asset'
 import type { Project } from '../../../types'
 
 interface Props {
@@ -62,7 +63,7 @@ export function FeaturedProjectCard({ project, hidden }: Props) {
         <div className="mt-8 overflow-hidden rounded-xl border border-gs-border/50 bg-gs-bg">
           {cs.screenshots[0] ? (
             <img
-              src={cs.screenshots[0]}
+              src={asset(cs.screenshots[0])}
               alt={`${project.title} screenshot`}
               className="w-full object-cover"
               loading="lazy"

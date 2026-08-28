@@ -35,6 +35,16 @@
     <meta property="og:image" content="/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      ;(function () {
+        var p = new URLSearchParams(window.location.search).get('p')
+        if (p) {
+          window.history.replaceState(null, '', '/portfolio' + p)
+        }
+      })()
+    </script>
+
     <!-- Inline script: apply saved theme before first paint to prevent flash -->
     <script>
       ;(function () {
