@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens ────────────────────────────────────────────── */
+:root {
+  --color-bg:           #F7F9FC;
+  --color-surface:      #FFFFFF;
+  --color-text-1:       #0D1B2E;
+  --color-text-2:       #475569;
+  --color-accent-blue:  #1558C0;
+  --color-accent-teal:  #0B7A6E;
+  --color-accent-gold:  #B45309;
+  --color-border:       #6B7FA3;
+}
+
+[data-theme="dark"] {
+  --color-bg:           #0B1120;
+  --color-surface:      #141E30;
+  --color-text-1:       #EEF2F9;
+  --color-text-2:       #94A3B8;
+  --color-accent-blue:  #60A5FA;
+  --color-accent-teal:  #2DD4BF;
+  --color-accent-gold:  #FBBF24;
+  --color-border:       #3F6FA0;
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text-1);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ── Typography base ──────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  margin: 0;
+  color: var(--color-text-1);
+}
+
+p {
+  margin: 0;
+  color: var(--color-text-2);
+}
+
+a {
+  color: var(--color-accent-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness 0.15s ease;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ── Focus ────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Scrollbar (subtle) ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+/* ── Reduced motion ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Reveal animation (applied via JS class) ──────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1),
+              transform 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Skip link ────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--color-accent-blue);
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
