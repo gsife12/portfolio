@@ -2,7 +2,7 @@
 // canonical tags, OG metadata, and the sitemap.
 export const SITE_URL = '{{REPLACE: https://your-domain.com}}'
 
-export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xljerypn'
+export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xljeeajr'
 
 export const RESUME_PATH = '/Gideon_Sife_Resume.pdf'
 
